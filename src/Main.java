@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,8 @@ public class Main {
         var altura = alturaCm / 100;
         var imc = peso / Math.pow(altura, 2);
 
-        System.out.println("Seu índice de massa corporal é de " + imc);
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        System.out.println("Seu índice de massa corporal é de " + df.format(imc));
     }
 }
