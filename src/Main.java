@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static Scanner Scanner;
+    public static Scanner Scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner = new Scanner(System.in);
 
         System.out.print("Calculadora de Indice de Massa Corporal\nInsira seu peso (em Kgs): ");
         var peso = Scanner.nextDouble();
